@@ -1,0 +1,1 @@
+https://medium.com/@nicolasbontempo/programando-javascript-orientado-a-objetos-87b1e98af6e4
