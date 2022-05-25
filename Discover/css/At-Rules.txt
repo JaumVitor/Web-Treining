@@ -1,0 +1,21 @@
+
+at-rules @
+
+@import - importar css externo
+@media - criar campos condicionais 
+@font-face - fonts externas
+@key-frame - Para animações 
+
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;&display=swap');
+
+    @media (min-width: 500px) {
+        rules here...
+    }
+
+    @font-face { 
+        rules here...
+    }
+
+    @key-frame {
+        rules here...
+    }

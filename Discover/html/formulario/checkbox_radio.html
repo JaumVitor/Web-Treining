@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- value - Para o momento em que estiver no javascript, definir qual o valor do campo quando estiver selecionado (Por padrão é on)
+    
+    Nota : Se uma caixa de seleção estiver desmarcada quando seu formulário for enviado, não haverá nenhum valor enviado ao servidor para representar seu estado desmarcado (por exemplo value=unchecked); o valor não é submetido ao servidor.-->
+   <fieldset>
+       <legend>Escolha de profissão</legend>
+           <div>
+               <input id="programmer" value="programmer"type="checkbox" name="profissao" id="job1">
+               <label for="job">Programmer</label>
+           </div>
+           <div>
+               <input id="gamer" value="gamer" type="checkbox" name="profissao" id="job2">
+               <label for="job2">Games</label>
+           </div>
+   </fieldset>
+
+   <form id="profissoes" action="submit" required="required">
+       <fieldset>
+        <!-- Quando o formulário é enviado, o par de nome / valor de dados será escolha=1 (name=value)-->
+           <legend>Outra escolha</legend>
+            <div>
+                <input type="checkbox" name="escolha" value="1" id="escolha1">
+               <label for="escolha1">Opção 1</label>
+            </div>
+            <div>
+                <input type="checkbox" name="escolha1" value="2" id="escolha2"
+                >
+               <label for="escolha2">Opção 2</label>
+            </div>
+       
+            <button form="profissoes" type="submit">Enviar respostas</button>
+       </fieldset>
+
+    <fieldset>
+        <legend>Gostaria de um café ?</legend>
+        <div>
+            <input id="coffe-yes" type="radio" name="coffe" value="yes">
+            <label for="coffe-yes">Sim, gostaria</label>
+        </div>
+
+        <div>
+            <input id="coffe-no" type="radio" name="coffe" value="no" checked>
+            <label for="coffe-no">Não, estou ocupado</label>
+        </div>
+    </fieldset>
+   </form>
+</body>
+</html>

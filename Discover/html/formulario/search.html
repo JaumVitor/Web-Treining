@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="pesquisa">Pesquisar local por ID</label>
+        <div>            
+            <input title="Digite valores numericos com 2 algorismos" pattern="[0-9]{2}" type="search" name="busca" id="pesquisa" placeholder="Pra onde vamos ?">
+            <button>Buscar</button>
+        </div>
+    </form>
+    
+    <br><br>
+
+    <form action="">
+        <datalist id="sugestoes-palavras">
+            <option>Atletico mineiro</option>
+            <option>Ladeira abaixo</option>
+            <option>Testando etc</option>
+        </datalist>
+
+        <input type="search" name="buscar" id="buscar-name" placeholder="Digite uma palavra" area-label="Pesquisar palavra" list="sugestoes-palavras">
+        <button>Buscar</button>
+    </form>
+
+</body>
+</html>

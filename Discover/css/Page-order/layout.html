@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .container {
+            border: 1px solid red; 
+            height: 300px; 
+
+            position: relative;
+            /* Referenciando container como pai */
+        }
+
+        .box {
+            width: 100px; 
+            height: 100px; 
+            color: white; 
+
+            margin-top: 20px; 
+        }
+
+        .box1 {
+            background-color: blue; 
+        }
+        
+        .box2 {
+            background-color: red;
+        }
+
+        .box3 {
+            background-color: black; 
+            position: absolute; /*Declarando o box3 como absolute*/
+            
+            right: 0;
+            bottom: 0;
+        }
+
+    </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- O container é pai das caixas -->
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+
+            <!-- Quando eu coloco absolute dentro do container e faço a referencia (usando o relative no container), ele vai ficar absoluto em relação ao pai container -->
+            <div class="box box3"></div>
+        </div>
+        <!-- Se estiver aqui fora, ele não vai ter referencia de pai, logo seu pai vai referenciar ao root ou html -->
+        <!-- <div class="box box3"></div> -->
+    </body>
+</html>

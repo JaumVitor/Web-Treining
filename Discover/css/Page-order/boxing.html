@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;    
+        }
+        
+        /* *** Margin colapse ***
+         O margin inline =! do margin block (left + right)
+        inline ele soma as margins, porem o block não soma (top + bottom)*/
+        .box {
+            border: 2px solid red; 
+            margin-bottom: 10px; 
+        }
+        
+        section {
+            border: 2px solid green; 
+            margin-top: 10px; 
+            /* ligicamente esperaria ter 20px de distancia entre o .box e section (Diferente se fosse margin-left e margin-right )*/
+        }
+        
+        .box, section {
+            height: 100px; 
+            width: 100px;  /* O width é o unico modificador de tamanho que funciona no inline  */
+            /* display: inline;  */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        Lorem ipsum dolor
+    </div>
+
+    <section>
+        Box bottom
+    </section>
+
+</body>
+</html>

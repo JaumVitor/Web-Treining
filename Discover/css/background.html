@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        * {
+            margin: 0; 
+        }
+
+        header {
+            border: 7px dashed red; 
+            background-color: green; 
+            height: 300px; 
+            padding: 30px; 
+
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe94e-y8QF07ai3ZrAH48XdDTEkXQ_oVaQsQ&usqp=CAU");
+            
+            background-repeat: no-repeat; 
+            background-position: center top; 
+            background-size: contain; /*contain - se adapta ao tamanho */ 
+            /* background-origin: border-box; /*inicia na borda */
+            /* cover - Usado para expandir imagem para o tamanho do background (background-size: cover;) */
+
+            background-origin: content-box; /*origem da imagem, dentro do background - content, padding, border*/
+            
+            background-clip: padding-box; 
+            
+            box-sizing: border-box; 
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        content into box
+    </header>
+</body>
+</html>

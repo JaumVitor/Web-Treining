@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0; 
+            display: flex;  /* para fazer o alinhamento do .container */
+            height: 100vh; /* Para obter um parametro definido*/
+            
+            /* Alinhamento no eixo y */
+            align-items: center; 
+
+            /* Alinhamento no eixo x, nesse caso desnessário, pois o alinhamento do eixo x ja esta sendo feito atraves do width: 100vw + justfy-content: space-between (.container)*/
+            justify-content: center; 
+        }
+
+        .box {
+            width: 150px;
+            height: 150px; 
+            margin: 0 10px; 
+        }
+
+        .box1 {
+            background-color: blue; 
+        }
+
+        .box2 {
+            background-color: red; 
+        }
+
+        .box3 {
+            background-color: green; 
+        }
+
+        .container {
+            display: flex; 
+            justify-content: space-between; 
+            width: 100vw;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+</body>
+</html>

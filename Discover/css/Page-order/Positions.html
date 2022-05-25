@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body {
+            /* Se eu não definir o valor do meu height, a porcentagem definida no meu .box não vai ter referecia. */
+            height: 100vh; /*Definindo a atura como 100% da viewport(vh)*/
+            margin: 0; 
+        }
+
+        .box {
+            width: 100%; 
+            /* Agora eu posso definir a % da altura */
+            height: calc(100% - 50px); 
+
+            background-image:url("https://source.unsplash.com/random");
+
+            background-repeat: no-repeat; 
+            background-position: center ;  
+        }
+
+        .box::after {
+            content: "Aqui temos uma mensagem"; 
+            color: white; 
+        }
+    </style>
+</head>
+<body>
+    <div class='box'></div>
+</body>
+</html>

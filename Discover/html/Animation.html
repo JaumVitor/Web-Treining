@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      div {
+        width: 600px;
+        height: 200px;
+        border: 1px solid black;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        transform: translateX(0);
+        transition: 1s;
+      }
+
+      .box.active {
+        transform: translateX(400px);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="box"></div>
+    </div>
+    <button onclick="clickToggle()">Toggle</button>
+  </body>
+
+  <script>
+    const box = document.querySelector('.box')
+
+    function clickToggle() {
+      box.classList.toggle('active')
+    }
+  </script>
+</html>
