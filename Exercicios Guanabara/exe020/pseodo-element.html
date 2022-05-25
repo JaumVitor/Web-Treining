@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseodo-element</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(109, 145, 55); 
+        }
+
+        a:hover {
+            color: rgb(68, 68, 235);
+            font-weight: bold;
+        }
+
+        a:active {
+            color: rgb(170, 29, 29); 
+        }
+
+        a:visited {
+            color: rgb(54, 46, 163); 
+        }
+        /* Usando pseodo-element */
+        li::after {
+            content: ' - [Link]';
+            color: rgba(0, 0, 255, 0.534); 
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    
+    <ul>
+        <a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=22" target="_blank">
+            <li>Youtube</li>
+        </a>
+        <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank">
+            <li>Github</li>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+            <li>Instagram</li>
+        </a>
+
+        <a href="https://www.spotify.com/" target="_blank">
+            <li>Spotfy</li>
+        </a>
+    </ul>
+</body>
+</html>

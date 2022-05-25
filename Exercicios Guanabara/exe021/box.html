@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-model</title>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Sarabun:ital,wght@0,200;0,400;1,200&display=swap');
+
+        h1 {
+            color: #BEEB09; 
+            font-size: 1.8em;
+            background-image: linear-gradient(to right, #a92debc7, #ebd24485); 
+
+            border-radius: 50px;
+            text-shadow: 2px 2px 5px #333f05;
+        }
+
+        h2 {
+            color: #a5c038;
+            text-shadow: 1px 1px 4px #333f05;
+        }
+
+        header {
+            font-family: 'Fredoka One', cursive;
+            font-size: 2em;
+            color: #BEEB09;
+            text-shadow: 3px 3px 5px #445306;
+
+            background-image: linear-gradient(to right, #a92deb, #1571EB);
+            text-align: start;
+
+            margin: 20px;
+            padding: 5px; 
+
+            border-radius: 5px;
+            box-shadow: 5px 5px 15px #0a1631d2;
+        }
+
+        body {
+            font-family: 'Sarabun', sans-serif;
+            /* background-color: #EBAC38; */
+            background-image: linear-gradient(to left, #a7c039, #EBD244, #eedc3e);
+            
+            background-attachment: fixed; 
+            color: white; 
+            margin: auto;
+            
+            width: 800px;
+        }
+        
+        main {
+            background-image: linear-gradient(to left, #1572eb, #a92deb); 
+            margin: 20px;
+            padding: 5px 20px;
+            
+            border-radius: 5px;
+            box-shadow: 5px 5px 15px #0a1631d2;
+        }
+        
+        main #divulgacoes-lancamentos h1{
+            margin-top: 10px;
+        }
+        
+        section {
+            padding-left: 5px; 
+            margin: 30px;
+        }
+        
+        section > p {
+            text-align: justify;
+            padding-left: 8px;
+        }
+        
+        article {
+            background-image: linear-gradient(to right, #a92deb38, #ebd24436); 
+            
+            border-radius: 10px 17px 17px 10px;
+        }
+        
+        a {
+            text-decoration: none;
+            font-size: 0.6em;
+            display: inline-block;
+
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #eedc3e;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+        }
+        
+        ul {
+            display: none;
+        }
+
+        #mouse-hover {
+            height: 30px;
+            width: 30px; 
+
+            display: inline;
+        }
+
+        #mouse-hover:hover > ul{
+            display: block;
+        }
+        
+        #img-menu {
+            height: 30px;
+            width: 30px;
+        
+            justify-content: end;
+        }
+
+        footer {
+            background-image: linear-gradient(to left, #1572eb, #a92deb); 
+            text-align: center;
+            
+            width: 800px;
+            border-radius: 3px;
+            margin: auto;
+        }
+        
+        </style>
+</head>
+
+<body>
+    <header> <!-- Cabeçalho-->
+        Enter-Treiniment
+        <div id="mouse-hover">
+            <img src="menu-image.png" alt="menu" id="img-menu">
+            <ul>
+                <a href="#"><li>link</li></a>
+                <a href="#"><li>link</li></a>
+                <a href="#"><li>link</li></a>
+            </ul>
+        </div>
+
+    </header>
+    <main>  <!-- Conteudo principal-->
+        <section id="divulgacoes-lancamentos">
+            <h1>Lançamentos da Netflix</h1>
+        
+            <article>
+                <h2>The whither</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem odio pariatur, corporis nobis illum cum accusamus et recusandae possimus est id enim tempora placeat itaque cumque molestias, perspiciatis reiciendis laudantium?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione rerum facilis illum totam, soluta aspernatur adipisci perferendis molestias, quas nisi aliquam! Ratione atque sunt qui voluptatem explicabo ipsa possimus adipisci?</p>
+                <h2>Cobra kai</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus consequatur perspiciatis, ullam, soluta praesentium optio architecto atque porro, omnis iure aliquid maiores. Tenetur explicabo nisi similique magnam, modi vitae illum.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, quisquam nemo exercitationem commodi, nulla voluptas aut excepturi fugiat cupiditate maiores atque unde accusantium ab. Et repudiandae voluptatum atque quisquam dicta!</p>
+            </article>
+        </section>
+
+        <section id="divulgacoes-promocoes">
+            <h1>Promoção do Amazon prime</h1>
+            <article>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem odio pariatur, corporis nobis illum cum accusamus et recusandae possimus est id enim tempora placeat itaque cumque molestias, perspiciatis reiciendis laudantium?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione rerum facilis illum totam, soluta aspernatur adipisci perferendis molestias, quas nisi aliquam! Ratione atque sunt qui voluptatem explicabo ipsa possimus adipisci?</p>
+            </article>
+
+        </section>
+    </main>
+
+    <footer> <!-- Rodapé-->
+        <p>Criação Jaum_Vitor</p>
+    </footer>
+
+</body>
+
+</html>

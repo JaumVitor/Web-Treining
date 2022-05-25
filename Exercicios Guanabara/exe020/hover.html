@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testadno hover</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        #container {
+            width: 200px; 
+            background-color: aquamarine; 
+            text-align: center;
+            margin-top: 20px; 
+        }
+        /* Ocultando os paragrafos e uls */
+        div > p {
+            /* Ocultando as tags <p> */
+            color: white; 
+            background-color: red; 
+            width: 180px; 
+            text-align: center; 
+
+            display: none; 
+        }
+
+        div > ul {
+            /* Ocultando as listas */
+            display: none; 
+        }
+
+        div:hover {
+            /* Apenas alterando a cor quando estiver em estado hover */
+            color: red; 
+        }
+
+        /* Ativando o display, que antes estava oculto(none) */
+        div:hover > p {
+            display: block; 
+        }
+
+        div:hover > ul {
+            display: block; 
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Testando hover</h1>
+    Passe o mouse sobre o texto abaixo
+    <div id="container">
+        Passe o mouse em cima
+        <p>CONTEUDO OCULTO!</p>
+        <p>Alou som</p>
+
+        <ul>
+            <a href="#"><li>Testando</li></a>
+            <li>Testando1</li>
+        </ul>
+    </div>
+</body>
+</html>
